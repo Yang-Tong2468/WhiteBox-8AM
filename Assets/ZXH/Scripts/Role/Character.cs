@@ -112,11 +112,11 @@ public class Character : MonoBehaviour
                   $"Sur{attributes.currentSurvival}, Int{attributes.currentIntelligence}, " +
                   $"C{attributes.currentCharm}, Combat{attributes.currentCombat}");
 
-        // 这里可以添加事件通知系统，通知其他系统属性已更新
-        foreach( var baseEvent in CharacterEventManager.Instance?.activeEventsDic.Values)
-        {
-            baseEvent.UpdateAttributeRequirementValues();
-        }
+        //// 这里可以添加事件通知系统，通知其他系统属性已更新
+        //foreach( var baseEvent in CharacterEventManager.Instance?.activeEventsDic.Values)
+        //{
+        //    baseEvent.UpdateAttributeRequirementValues();
+        //}
     }
 
 

@@ -39,6 +39,33 @@ public class CharacterStats : MonoBehaviour
     public bool HasAttribute(AttributeDefinition def) => def != null && _baseValues.ContainsKey(def.id);
 
     /// <summary>
+    /// 通过属性的字符串ID获取其最终值
+    /// </summary>
+    /// <param name="attributeID">要查询的属性ID</param>
+    /// <returns>计算后的最终属性值,如果ID无效，则返回0</returns>
+    public float GetAttributeValueByID(string attributeID)
+    {
+        // 检查ID和属性集合是否有效
+        if (string.IsNullOrEmpty(attributeID) || baseAttributeSet == null)
+        {
+            Debug.LogWarning($"Attempted to get an attribute with a null or empty ID.");
+            return 0f;
+        }
+
+        // 使用LINQ在属性列表中查找与ID匹配的AttributeDefinition
+        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(def => def.id == attributeID);
+
+        if (targetDef == null)
+        {
+            Debug.LogWarning($"Attribute with ID '{attributeID}' not found on '{gameObject.name}'.", this);
+            return 0f; // 返回一个安全的默认值
+        }
+
+        // 如果找到了，就调用现有的、功能完备的GetFinal方法来获取最终值
+        return GetFinal(targetDef);
+    }
+
+    /// <summary>
     /// 获得一个属性的最终值（在应用了所有修正之后） 
     /// 这是外部系统获取角色当前属性值的主要接口
     /// </summary>
