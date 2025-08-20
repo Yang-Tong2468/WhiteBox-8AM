@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 8860309032001031572}
   - component: {fileID: 3822512337545529787}
   - component: {fileID: 2841233633248221307}
-  - component: {fileID: 5668237573959702197}
+  - component: {fileID: 8834516246724101643}
+  - component: {fileID: 2910889874641868563}
   m_Layer: 0
   m_Name: JuniorStudent
   m_TagString: Untagged
@@ -152,7 +153,7 @@ MonoBehaviour:
   customAffinityRules:
   - {fileID: 11400000, guid: 84bef8a469b81dc409a5e8a0dc8446f5, type: 2}
   moveDistance: 5
-  duration: 2
+  transitionDuration: 2
   stats: {fileID: 0}
 --- !u!114 &2841233633248221307
 MonoBehaviour:
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionDuration: 2
---- !u!114 &5668237573959702197
+--- !u!114 &8834516246724101643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,8 +177,109 @@ MonoBehaviour:
   m_GameObject: {fileID: 3613817042664008891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e62ff15ac01824da8410455b80b34f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2185d538298c73f418ba252c3e3e01ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scheduleAsset: {fileID: 11400000, guid: 8986c5f4e0effb64ca9d39fdf6451127, type: 2}
-  npcId: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_forwardEventsToListeners: 1
+  m_includeInSavedGameData: 1
+  m_addNewQuestsSinceSavedGame: 0
+  m_questList:
+  - {fileID: 11400000, guid: 3798a6fbf45f3d642b90c0b25b6cd216, type: 2}
+  m_deletedStaticQuests: []
+  m_id:
+    m_text: JuniorStudent
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_displayName:
+    m_text: JuniorStudent
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_image: {fileID: 21300000, guid: 6984d14d9ccd7c540b7b4c368909c306, type: 3}
+  m_textTable: {fileID: 0}
+  m_noQuestsUIContents:
+    m_icon: {fileID: 0}
+    m_headingText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+    m_bodyText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+  m_offerableQuestsUIContents:
+    m_icon: {fileID: 0}
+    m_headingText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+    m_bodyText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+  m_activeQuestsUIContents:
+    m_icon: {fileID: 0}
+    m_headingText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+    m_bodyText:
+      m_text: 
+      m_stringAsset: {fileID: 0}
+      m_textTable: {fileID: 0}
+      m_textTableFieldID: 0
+  m_completedQuestDialogueMode: 0
+  m_questDialogueUI: {fileID: 0}
+  m_cooldownCheckFrequency: 0
+--- !u!114 &2910889874641868563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3613817042664008891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafc5104aecb3b74e99e9fa17a5e3496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathPrefabs: []
+  polymorphInto: {fileID: 0}
+  polymorphAudioClip: {fileID: 0}
+  onTarget:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8834516246724101643}
+        m_TargetAssemblyTypeName: PixelCrushers.QuestMachine.QuestGiver, Assembly-CSharp-firstpass
+        m_MethodName: StartDialogueWithPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUntarget:
+    m_PersistentCalls:
+      m_Calls: []
+  onAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  onApply:
+    m_PersistentCalls:
+      m_Calls: []
