@@ -38,6 +38,58 @@ public class CharacterStats : MonoBehaviour
 
     public bool HasAttribute(AttributeDefinition def) => def != null && _baseValues.ContainsKey(def.id);
 
+
+    /// <summary>
+    /// 通过属性ID，对属性的基础值进行加减操作。
+    /// </summary>
+    /// <param name="attributeID">属性的唯一字符串ID</param>
+    /// <param name="delta">变化的量（正数为增加，负数为减少）</param>
+    public void AddAttributeByID(string attributeID, float delta)
+    {
+        AttributeDefinition targetDef = FindAttributeDefinitionByID(attributeID);
+        if (targetDef != null)
+        {
+            // 调用已有的、基于AttributeDefinition的Add方法
+            Add(targetDef, delta, true);
+        }
+    }
+
+    /// <summary>
+    /// 通过属性ID，直接设置属性的基础值。
+    /// </summary>
+    /// <param name="attributeID">属性的唯一字符串ID</param>
+    /// <param name="value">要设置的新基础值</param>
+    public void SetAttributeBaseByID(string attributeID, float value)
+    {
+        AttributeDefinition targetDef = FindAttributeDefinitionByID(attributeID);
+        if (targetDef != null)
+        {
+            // 调用已有的、基于AttributeDefinition的SetBase方法
+            SetBase(targetDef, value, true);
+        }
+    }
+
+    /// <summary>
+    /// 辅助函数：通过字符串ID查找对应的AttributeDefinition
+    /// </summary>
+    private AttributeDefinition FindAttributeDefinitionByID(string attributeID)
+    {
+        if (string.IsNullOrEmpty(attributeID) || baseAttributeSet == null)
+        {
+            Debug.LogWarning($"尝试查找属性时，ID为空或AttributeSet未设置。", this);
+            return null;
+        }
+
+        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(def => def.id == attributeID);
+
+        if (targetDef == null)
+        {
+            Debug.LogWarning($"在 '{gameObject.name}' 的属性集中找不到ID为 '{attributeID}' 的属性。", this);
+        }
+
+        return targetDef;
+    }
+
     /// <summary>
     /// 通过属性的字符串ID获取其最终值
     /// </summary>

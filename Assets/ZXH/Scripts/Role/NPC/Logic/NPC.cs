@@ -1,5 +1,4 @@
-﻿// 文件名: NPC.cs (修改版)
-using Slax.Schedule;
+﻿using Slax.Schedule;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
