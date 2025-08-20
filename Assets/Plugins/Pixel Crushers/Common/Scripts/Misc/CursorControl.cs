@@ -36,16 +36,18 @@ namespace PixelCrushers
 		
 		public static void ShowCursor(bool value) 
 		{
-			Cursor.visible = value;
+			// 禁用鼠标控制 - 由MouseManager统一管理
+			// Cursor.visible = value;
 		}
 		
 		public static void LockCursor(bool value) 
 		{
-			if (value == false && isCursorLocked) 
-			{
-				cursorLockMode = Cursor.lockState;
-			}
-			Cursor.lockState = value ? cursorLockMode : CursorLockMode.None;
+			// 禁用鼠标控制 - 由MouseManager统一管理
+			// if (value == false && isCursorLocked) 
+			// {
+			//	cursorLockMode = Cursor.lockState;
+			// }
+			// Cursor.lockState = value ? cursorLockMode : CursorLockMode.None;
 		}
 		
     }

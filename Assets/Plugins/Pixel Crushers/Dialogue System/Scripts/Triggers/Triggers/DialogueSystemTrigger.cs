@@ -520,9 +520,10 @@ namespace PixelCrushers.DialogueSystem
             DialogueManager.instance.conversationStarted -= OnConversationStartAnywhere;
             if (showCursorDuringConversation)
             {
-                wasCursorVisible = Cursor.visible;
-                savedLockState = Cursor.lockState;
-                StartCoroutine(ShowCursorAfterOneFrame());
+                // 禁用鼠标控制 - 由MouseManager统一管理
+                // wasCursorVisible = Cursor.visible;
+                // savedLockState = Cursor.lockState;
+                // StartCoroutine(ShowCursorAfterOneFrame());
             }
             if (pauseGameDuringConversation && string.Equals(DialogueManager.lastConversationStarted, conversation))
             {
@@ -535,8 +536,9 @@ namespace PixelCrushers.DialogueSystem
         protected IEnumerator ShowCursorAfterOneFrame()
         {
             yield return null;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // Cursor.visible = true;
+            // Cursor.lockState = CursorLockMode.None;
         }
 
         private void OnConversationEndAnywhere(Transform actor)
@@ -549,8 +551,9 @@ namespace PixelCrushers.DialogueSystem
                 StopMonitoringConversationDistance();
                 if (showCursorDuringConversation)
                 {
-                    Cursor.visible = wasCursorVisible;
-                    Cursor.lockState = savedLockState;
+                    // 禁用鼠标控制 - 由MouseManager统一管理
+                    // Cursor.visible = wasCursorVisible;
+                    // Cursor.lockState = savedLockState;
                 }
                 if (pauseGameDuringConversation && didIPause)
                 {
@@ -764,6 +767,12 @@ namespace PixelCrushers.DialogueSystem
             tryingToStart = true;
             try
             {
+                // 全局检查：如果玩家已死亡，禁止所有对话触发
+                if (DialogueLua.GetVariable("IsPlayerDead").asBool == true)
+                {
+                    return;
+                }
+                
                 if (((condition == null) || condition.IsTrue(interactor)))
                 {
                     Fire(actor);

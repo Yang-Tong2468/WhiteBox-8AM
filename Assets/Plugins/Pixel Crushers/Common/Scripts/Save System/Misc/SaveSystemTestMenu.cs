@@ -80,14 +80,16 @@ namespace PixelCrushers
             {
                 if (open)
                 {
-                    m_prevCursorState = Cursor.visible;
-                    Cursor.visible = true;
-                    Cursor.lockState = CursorLockMode.None;
+                    // 禁用鼠标控制 - 由MouseManager统一管理
+                    // m_prevCursorState = Cursor.visible;
+                    // Cursor.visible = true;
+                    // Cursor.lockState = CursorLockMode.None;
                 }
                 else
                 {
-                    Cursor.visible = m_prevCursorState;
-                    Cursor.lockState = m_prevCursorState ? CursorLockMode.None : CursorLockMode.Locked;
+                    // 禁用鼠标控制 - 由MouseManager统一管理
+                    // Cursor.visible = m_prevCursorState;
+                    // Cursor.lockState = m_prevCursorState ? CursorLockMode.None : CursorLockMode.Locked;
                 }
             }
         }

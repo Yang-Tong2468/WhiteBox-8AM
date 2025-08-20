@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Intellect
   displayName: Intellect
-  minValue: 0
+  minValue: 60
   maxValue: 100
   isResource: 0
   useInteger: 1

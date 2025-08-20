@@ -250,11 +250,249 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 2
+    fields:
+    - title: Name
+      value: IsNabuhaniFollower
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: IsPlayerDead
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 4
+    fields:
+    - title: Name
+      value: IsSudanHere
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 5
+    fields:
+    - title: Name
+      value: IsBaiyelingHere
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 6
+    fields:
+    - title: Name
+      value: IsMeimoHere
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 7
+    fields:
+    - title: Name
+      value: IsWifeHere
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 8
+    fields:
+    - title: Name
+      value: IsZhunaAlive
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 9
+    fields:
+    - title: Name
+      value: IsXiamaAlive
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 10
+    fields:
+    - title: Name
+      value: IsSuolaweierBad
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 11
+    fields:
+    - title: Name
+      value: IsSuolaweierAlive
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 12
+    fields:
+    - title: Name
+      value: IsSudanOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 13
+    fields:
+    - title: Name
+      value: IsPlayerOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 14
+    fields:
+    - title: Name
+      value: IsZhunaOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 15
+    fields:
+    - title: Name
+      value: IsXiamaOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 16
+    fields:
+    - title: Name
+      value: IsJialilaOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 17
+    fields:
+    - title: Name
+      value: IsRoutizhanlanOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 18
+    fields:
+    - title: Name
+      value: IsWoburutamaOpen
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
     - title: Title
-      value: NPC1_opening
+      value: NPC1_Opening
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -510,7 +748,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Big Potion", -1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -581,7 +819,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Big Bomb", -1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -723,14 +961,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsRoutizhanlanOpen"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3200
-        y: 302
+        x: 3200.5
+        y: 300.5
         width: 160
         height: 30
     - id: 6
@@ -1012,7 +1250,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") >= 5;
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1077,7 +1315,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") < 5;
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1237,7 +1475,7 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") - GetAttribute("Charm") >= 10;
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1320,14 +1558,14 @@ MonoBehaviour:
         destinationDialogueID: 19
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") - GetAttribute("Charm") < 10;
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2368
+        x: 2366.8374
         y: 722
         width: 160
         height: 30
@@ -1346,11 +1584,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1417,11 +1655,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1488,11 +1726,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1772,11 +2010,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2145,7 +2383,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u51771"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Bomb"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2179,7 +2417,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Bomb", 1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2216,7 +2454,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u51772\uFF0C\u5F00\u542F\u6E38\u620F\u7684\u51C6\u5907"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Boost Rune\uFF0C\u5F00\u542F\u6E38\u620F\u7684\u51C6\u5907"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2256,7 +2494,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Boost Rune", 1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2321,7 +2559,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", -30);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2392,7 +2630,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", -40);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2759,7 +2997,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsZhunaOpen"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2824,7 +3062,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsJialilaOpen"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2889,7 +3127,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsXiamaOpen"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2954,7 +3192,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsNabuhaniFollower"] = false;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3101,8 +3339,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1238.1802, y: 0}
-    canvasZoom: 0.78999966
+    canvasScrollPosition: {x: 949.1808, y: 747.75244}
+    canvasZoom: 0.6099997
   - id: 2
     fields:
     - title: Title
@@ -3340,7 +3578,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51773"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Chest key"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -3374,7 +3612,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Chest Key", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3411,7 +3649,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51774"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Fire Wand"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -3445,7 +3683,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Fire Wand", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3482,7 +3720,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51775"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Flag"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -3516,7 +3754,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Flag", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3581,7 +3819,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["IsPlayerDead"] = true;
+
+        GameObject.Find("Player").SetActive(false)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3799,7 +4039,8 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") - GetAttribute("Charm") - GetAttribute("Body")
+        < 20
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3870,7 +4111,8 @@ MonoBehaviour:
         destinationDialogueID: 14
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") - GetAttribute("Charm") - GetAttribute("Body")
+        >= 20
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3908,7 +4150,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51776"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Gate Key"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -3942,7 +4184,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Gate Key", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4149,7 +4391,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", 10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4214,7 +4456,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsSudanHere"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4225,7 +4467,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 25.373108, y: 33.582092}
+    canvasScrollPosition: {x: 0, y: 127.74074}
     canvasZoom: 0.67000043
   - id: 3
     fields:
@@ -4485,7 +4727,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsSudanHere"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4556,7 +4798,7 @@ MonoBehaviour:
         destinationDialogueID: 25
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsSudanHere"] = false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4677,7 +4919,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51773"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Great Sword"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4711,7 +4953,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Great Sword", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4748,7 +4990,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51774"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Heal Weed"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4782,7 +5024,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Heal Weed", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4807,7 +5049,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -4847,7 +5089,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["IsPlayerDead"] = true;
+
+        GameObject.Find("Player").SetActive(false)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4955,7 +5199,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u51776"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Hood"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4989,7 +5233,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Hood", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5237,7 +5481,7 @@ MonoBehaviour:
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsBaiyelingHere"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5275,7 +5519,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u51777"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Ice Wand"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5303,7 +5547,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Ice Wand", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5373,7 +5617,7 @@ MonoBehaviour:
         destinationDialogueID: 34
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsMeimoHere"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5444,7 +5688,7 @@ MonoBehaviour:
         destinationDialogueID: 35
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsWifeHere"] = false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5515,7 +5759,7 @@ MonoBehaviour:
         destinationDialogueID: 37
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsWifeHere"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5553,7 +5797,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517710"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Knight Boots"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5587,7 +5831,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Knight Boots", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5624,7 +5868,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517712"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Knight Helmet"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5658,7 +5902,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Knight Helmet", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5695,7 +5939,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517713"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Leather Armor"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5729,7 +5973,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Leather Armor", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5766,7 +6010,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5C5E\u6027\u503C+2"
+        value: "\u5C5E\u6027\u503C\u589E\u52A0"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5794,7 +6038,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", 10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5831,7 +6075,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u51778"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Iron Sword"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5865,7 +6109,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Health Potion", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5930,7 +6174,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5967,7 +6211,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u51779"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Kight Armor"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5995,7 +6239,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Knight Armor", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6251,7 +6495,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u606D\u559C\u4F60\u83B7\u80DC\u4E86\uFF0C\u83B7\u5F97\uFF1A\u9053\u517711"
+        value: "\u606D\u559C\u4F60\u83B7\u80DC\u4E86\uFF0C\u83B7\u5F97\uFF1A\u9053\u5177Magical
+          Powder"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6285,14 +6530,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Magical Powder", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1575.9348
-        y: 1189.9426
+        x: 1577.2506
+        y: 1116.2584
         width: 160
         height: 30
     - id: 42
@@ -6427,8 +6672,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2160
-        y: 436
+        x: 2164.2856
+        y: 449.57147
         width: 160
         height: 30
     - id: 44
@@ -6458,7 +6703,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u606D\u559C\u4F60\u83B7\u80DC\u4E86\uFF0C\u83B7\u5F97\uFF1A\u9053\u517711\uFF0C\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005\uFF0C\u5267\u60C5\u7EBF\u4E2D\u65AD"
+        value: "\u606D\u559C\u4F60\u83B7\u80DC\u4E86\uFF0C\u83B7\u5F97\uFF1A\u9053\u5177Leather
+          Boots\uFF0C\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005\uFF0C\u5267\u60C5\u7EBF\u4E2D\u65AD"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6486,14 +6732,17 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["IsNabuhaniFollower"] = false;
+
+        AddItem("Leather
+        Boots", 1)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2080.0002
-        y: 494.18182
+        x: 2162.8574
+        y: 522.75323
         width: 160
         height: 30
     - id: 45
@@ -6594,7 +6843,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5F00\u542F\u7FA4\u9F99\u65E0\u9996\uFF0C\u5C5E\u6027\u503C+1"
+        value: "\u5F00\u542F\u7FA4\u9F99\u65E0\u9996\uFF0C\u5C5E\u6027\u503C\u589E\u52A0"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6622,7 +6871,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: "AddAttribute(\"Body\", 10)\r"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6633,8 +6882,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 49.39026, y: 180.93944}
-    canvasZoom: 0.81999975
+    canvasScrollPosition: {x: 846.5681, y: 97.35296}
+    canvasZoom: 0.8499996
   - id: 4
     fields:
     - title: Title
@@ -6736,7 +6985,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 4
@@ -6866,7 +7115,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u4EFB\u4E00\u9053\u5177"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Potion"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6900,7 +7149,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Potion", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7079,7 +7328,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005\uFF0C\u5267\u60C5\u7EBF\u4E2D\u65AD"
+        value: "\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7113,7 +7362,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsNabuhaniFollower"] = false;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7261,14 +7510,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsZhunaAlive"] = false
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 499.67148
-        y: 466.26868
+        x: 518.6936
+        y: 776.1222
         width: 160
         height: 30
     - id: 8
@@ -7332,8 +7581,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 112.41806
-        y: 470.74628
+        x: 496
+        y: 470
         width: 160
         height: 30
     - id: 9
@@ -7474,8 +7723,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 499.67148
-        y: 550.2687
+        x: 518.6936
+        y: 860.1222
         width: 160
         height: 30
     - id: 11
@@ -7505,7 +7754,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u4EFB\u4E00\u9053\u5177"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Rune of Doom"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7539,14 +7788,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Rune of Doom", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 395.67148
-        y: 634.2687
+        x: 414.6936
+        y: 944.1222
         width: 160
         height: 30
     - id: 12
@@ -7616,8 +7865,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 603.6715
-        y: 634.2687
+        x: 622.69354
+        y: 944.1222
         width: 160
         height: 30
     - id: 13
@@ -7647,7 +7896,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u517714"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Small Bag"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7675,14 +7924,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Small Bag", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 395.67148
-        y: 718.2687
+        x: 414.6936
+        y: 1028.1222
         width: 160
         height: 30
     - id: 14
@@ -7712,7 +7961,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u65E0\u4E8B\u53D1\u751F\u4F60"
+        value: "\u65E0\u4E8B\u53D1\u751F"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7746,13 +7995,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 603.6715
-        y: 718.2687
+        x: 622.69354
+        y: 1028.1222
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 18.061, y: 13.524551}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 0, y: 97.58624}
+    canvasZoom: 0.5800004
   - id: 5
     fields:
     - title: Title
@@ -7984,7 +8233,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u4EFB\u4E00\u9053\u5177"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Potion"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8018,7 +8267,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Potion", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8197,7 +8446,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005\uFF0C\u5267\u60C5\u7EBF\u4E2D\u65AD"
+        value: "\u5948\u5E03\u54C8\u5C3C\u4E0D\u518D\u662F\u8FFD\u968F\u8005"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8231,7 +8480,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsNabuhaniFollower"] = false;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8379,7 +8628,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsXiamaAlive"] = false
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8623,7 +8872,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u4EFB\u4E00\u9053\u5177"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Rune of Doom"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8657,7 +8906,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Rune of Doom", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8765,7 +9014,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u517714"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Small Bag"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8793,7 +9042,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Small Bag", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8869,8 +9118,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 81.11214, y: 12.075348}
+    canvasZoom: 0.7000003
   - id: 6
     fields:
     - title: Title
@@ -9096,7 +9345,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\u9053\u5177"
+        value: "\u6D88\u8017:\u9053\u5177Surprise Box"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -9130,7 +9379,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Surprise Box", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9404,7 +9653,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517715"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Titanium Ingot"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -9438,7 +9687,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Titanium Ingot", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9475,7 +9724,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517716"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Titanium Nugget"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -9509,7 +9758,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Titanium Nugget", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9546,7 +9795,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517717"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Water"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -9580,7 +9829,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Water", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9617,7 +9866,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6D88\u8017\uFF1A\u9053\u517718"
+        value: "\u6D88\u8017\uFF1A\u9053\u5177Wizard Wand"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -9651,7 +9900,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Wizard Wand", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9721,7 +9970,8 @@ MonoBehaviour:
         destinationDialogueID: 31
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") + GetAttribute("Body") + GetAttribute("Charm")
+        + GetAttribute("Intellect") >= 300
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9792,7 +10042,8 @@ MonoBehaviour:
         destinationDialogueID: 32
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") + GetAttribute("Body") + GetAttribute("Charm")
+        + GetAttribute("Intellect") < 300
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10017,7 +10268,7 @@ MonoBehaviour:
         destinationDialogueID: 22
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Intellect") + GetAttribute("Body") >= 150
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10088,7 +10339,7 @@ MonoBehaviour:
         destinationDialogueID: 23
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Intellect") + GetAttribute("Body") < 150
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10159,7 +10410,7 @@ MonoBehaviour:
         destinationDialogueID: 22
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Intellect") + GetAttribute("Body") >= 120
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10230,7 +10481,7 @@ MonoBehaviour:
         destinationDialogueID: 23
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Intellect") + GetAttribute("Body") < 120
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10302,7 +10553,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Body", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10367,7 +10618,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["IsPlayerDead"] = true;
+
+        GameObject.Find("Player").SetActive(false)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10787,7 +11040,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -11828,7 +12081,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") >= 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -11899,7 +12152,7 @@ MonoBehaviour:
         destinationDialogueID: 53
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") < 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -11970,7 +12223,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") >= 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12041,14 +12294,14 @@ MonoBehaviour:
         destinationDialogueID: 55
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") >= 60
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2368
+        x: 2369.4927
         y: 722
         width: 160
         height: 30
@@ -12112,7 +12365,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") >= 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12183,7 +12436,7 @@ MonoBehaviour:
         destinationDialogueID: 56
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") < 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12254,7 +12507,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") >= 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12325,7 +12578,7 @@ MonoBehaviour:
         destinationDialogueID: 57
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") < 60
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12396,7 +12649,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Body") + GetAttribute("Intellect") >= 200
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12467,7 +12720,7 @@ MonoBehaviour:
         destinationDialogueID: 58
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Body") + GetAttribute("Intellect") < 200
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -12505,7 +12758,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u4EA7\u751F\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1"
+        value: "\u4EA7\u751F\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1Amazing Rune"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -12539,7 +12792,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Amazing Rune", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12681,7 +12934,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Body", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12752,7 +13005,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Body", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12823,14 +13076,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Body", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3200
-        y: 806
+        x: 3198.6301
+        y: 806.6849
         width: 160
         height: 30
     - id: 58
@@ -12894,7 +13147,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12931,7 +13184,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u91D1\u5E01+3"
+        value: "\u91D1\u5E01\u589E\u52A0"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -12965,7 +13218,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", 30)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12976,8 +13229,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 737.4441, y: 460.22308}
-    canvasZoom: 0.6100003
+    canvasScrollPosition: {x: 1708.1638, y: 536.9489}
+    canvasZoom: 0.76000047
   - id: 7
     fields:
     - title: Title
@@ -13177,7 +13430,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsRoutizhanlanOpen"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -13609,7 +13862,7 @@ MonoBehaviour:
         destinationDialogueID: 9
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") >= 200
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -13680,7 +13933,7 @@ MonoBehaviour:
         destinationDialogueID: 10
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Gold") < 200
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -14184,7 +14437,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsSuolaweierBad"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14332,7 +14585,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14610,7 +14863,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsNabuhaniFollower"] = false;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -14746,7 +14999,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsSuolaweierBad"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15248,15 +15501,15 @@ MonoBehaviour:
         destinationDialogueID: 32
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") >= 100
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1328
-        y: 554
+        x: 1338.8108
+        y: 554.67566
         width: 160
         height: 30
     - id: 31
@@ -15319,7 +15572,7 @@ MonoBehaviour:
         destinationDialogueID: 36
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") < 100
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15357,7 +15610,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u83B7\u5F97\uFF1A\u9053\u517719"
+        value: "\u83B7\u5F97\uFF1A\u9053\u5177Wood"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15385,7 +15638,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Wood", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15532,7 +15785,7 @@ MonoBehaviour:
         destinationDialogueID: 32
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") >= 100
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15603,7 +15856,7 @@ MonoBehaviour:
         destinationDialogueID: 36
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: GetAttribute("Charm") < 100
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15680,8 +15933,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 390.7577}
-    canvasZoom: 0.49999997
+    canvasScrollPosition: {x: 864.526, y: 0}
+    canvasZoom: 0.5600001
   - id: 8
     fields:
     - title: Title
@@ -15978,7 +16231,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u4F60\u4E0D\u5982\u4ED6"
+        value: "\u4F60\u4E0D\u5982\u5979"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16154,7 +16407,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: "AddAttribute(\"Gold\", 15)\r"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16262,7 +16515,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5C5E\u6027\u503C\u589E\u52A0\uFF0C\u751F\u6210\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1"
+        value: "\u5C5E\u6027\u503C\u589E\u52A0\uFF0C\u751F\u6210\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1Amazing
+          Rune"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16302,7 +16556,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'AddItem("Amazing Rune", 1);
+
+        AddAttribute("Charm", 10)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16339,7 +16595,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u7D22\u62C9\u8587\u513F\u4E0D\u518D\u662F\u8FFD\u968F\u8005\uFF0C\u6210\u4E3A\u5993\u5973"
+        value: "\u7D22\u62C9\u8587\u513F\u6210\u4E3A\u5993\u5973"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16373,7 +16629,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsSuolaweierBad"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16438,7 +16694,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", 20)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16508,7 +16764,7 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsSuolaweierAlive"] = true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16579,7 +16835,7 @@ MonoBehaviour:
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["IsSuolaweierAlive"] = false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16830,7 +17086,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "\u5347\u7EA7"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16864,7 +17120,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Gold", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16901,7 +17157,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u4EA7\u751F\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1"
+        value: "\u4EA7\u751F\uFF1A\u59BB\u5B50\u7684\u4E0D\u6EE1Amazing Rune"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16929,7 +17185,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddItem("Amazing Rune", 1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17037,7 +17293,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5C5E\u6027\u503C\u589E\u52A0"
+        value: "\u5C5E\u6027\u503C\u53D8\u5316"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -17065,7 +17321,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Body", -60)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17076,8 +17332,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.40000045
+    canvasScrollPosition: {x: 103.98745, y: 15.375397}
+    canvasZoom: 0.94
   syncInfo:
     syncActors: 0
     syncItems: 0

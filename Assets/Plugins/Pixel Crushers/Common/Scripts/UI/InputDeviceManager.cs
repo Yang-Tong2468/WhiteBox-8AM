@@ -532,17 +532,19 @@ namespace PixelCrushers
 
         public void ForceCursor(bool visible)
         {
-            Cursor.visible = visible;
-            Cursor.lockState = visible ? CursorLockMode.None : cursorLockMode;
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // Cursor.visible = visible;
+            // Cursor.lockState = visible ? CursorLockMode.None : cursorLockMode;
             m_lastMousePosition = GetMousePosition();
-            StartCoroutine(ForceCursorAfterOneFrameCoroutine(visible));
+            // StartCoroutine(ForceCursorAfterOneFrameCoroutine(visible));
         }
 
         private IEnumerator ForceCursorAfterOneFrameCoroutine(bool visible)
         {
             yield return CoroutineUtility.endOfFrame;
-            Cursor.visible = visible;
-            Cursor.lockState = visible ? CursorLockMode.None : cursorLockMode;
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // Cursor.visible = visible;
+            // Cursor.lockState = visible ? CursorLockMode.None : cursorLockMode;
         }
 
 #if USE_NEW_INPUT

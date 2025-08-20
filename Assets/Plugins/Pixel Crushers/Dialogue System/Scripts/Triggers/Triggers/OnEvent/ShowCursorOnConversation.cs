@@ -45,22 +45,25 @@ namespace PixelCrushers.DialogueSystem
 
         public void OnConversationStart(Transform actor)
         {
-            wasCursorVisible = Cursor.visible;
-            savedLockState = Cursor.lockState;
-            StartCoroutine(ShowCursorAfterOneFrame());
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // wasCursorVisible = Cursor.visible;
+            // savedLockState = Cursor.lockState;
+            // StartCoroutine(ShowCursorAfterOneFrame());
         }
 
         private IEnumerator ShowCursorAfterOneFrame()
         {
             yield return null;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // Cursor.visible = true;
+            // Cursor.lockState = CursorLockMode.None;
         }
 
         public void OnConversationEnd(Transform actor)
         {
-            Cursor.visible = wasCursorVisible;
-            Cursor.lockState = savedLockState;
+            // 禁用鼠标控制 - 由MouseManager统一管理
+            // Cursor.visible = wasCursorVisible;
+            // Cursor.lockState = savedLockState;
         }
 
 #endif

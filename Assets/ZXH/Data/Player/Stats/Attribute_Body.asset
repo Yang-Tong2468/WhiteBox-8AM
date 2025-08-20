@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Body
   displayName: Body
-  minValue: 0
+  minValue: 60
   maxValue: 100
   isResource: 0
   useInteger: 1
