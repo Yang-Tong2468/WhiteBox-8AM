@@ -254,7 +254,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Title
-      value: NPC1_opening
+      value: NPC1_Opening
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -3101,8 +3101,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1238.1802, y: 0}
-    canvasZoom: 0.78999966
+    canvasScrollPosition: {x: 2515.8765, y: 0}
+    canvasZoom: 0.6399998
   - id: 2
     fields:
     - title: Title

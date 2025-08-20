@@ -3499,7 +3499,7 @@ MonoBehaviour:
     - 
     customVariableValues: 
     priority: 0
-  defaultConversation: NPC1_default_
+  defaultConversation: NPC1_Opening
   showDebugInfo: 1
 --- !u!114 &742855974
 MonoBehaviour:
@@ -3514,7 +3514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: NPC1
-  conversationTitle: NPC1_default_
+  conversationTitle: NPC1_Opening
   interactionRange: 1
   isInRange: 0
   interactionPrompt: {fileID: 0}
@@ -9432,7 +9432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initializeOnStart: 1
   pauseGameDuringDialogue: 1
-  player: {fileID: 0}
+  player: {fileID: 634097931}
   playerTag: Player
   enableDebugMode: 1
 --- !u!4 &1949305785
