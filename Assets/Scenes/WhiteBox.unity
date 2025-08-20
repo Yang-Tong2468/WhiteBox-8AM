@@ -11872,7 +11872,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ID: 1
-  m_ItemObjectPrefab: {fileID: 0}
+  m_ItemObjectPrefab: {fileID: 6362288584643107238, guid: 99f2ccf6e56f42146ad63b866481f569,
+    type: 3}
 --- !u!114 &403817891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11885,7 +11886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70740502a5323254798d58837afd31c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Database: {fileID: 11400000, guid: ee0acf00c7697ec4a959dbddaf25fa04, type: 2}
+  m_Database: {fileID: 11400000, guid: 0c21d2f9a5a04d44aae00f37746f6b43, type: 2}
   m_PreEvaluateAttributes: 1
   m_DontDestroyOnLoad: 0
 --- !u!4 &403817892
@@ -18360,7 +18361,7 @@ MonoBehaviour:
   m_SaveOnApplicationQuit: 0
   m_SaveOnDestroy: 0
   m_LoadOnStart: 0
-  m_Inventory: {fileID: 0}
+  m_Inventory: {fileID: 634097945}
   m_Additive: 0
 --- !u!114 &634097941
 MonoBehaviour:
@@ -18374,7 +18375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ca2b4fcf8a4993b85339717e172c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Inventory: {fileID: 0}
+  m_Inventory: {fileID: 634097945}
   m_InteractableIndicator: {fileID: 0}
   m_AutoInteract: 0
   m_Input:
