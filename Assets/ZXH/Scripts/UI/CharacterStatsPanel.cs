@@ -72,8 +72,10 @@ public class CharacterStatsPanel : MonoBehaviour
 
         if (targetStats.baseAttributeSet == null) return;
 
-        foreach (var attrDef in targetStats.baseAttributeSet.attributes)
+        foreach (var attributeDefault in targetStats.baseAttributeSet.attributes)
         {
+            var attrDef = attributeDefault.Definition;
+
             GameObject uiInstance = Instantiate(attributeUIPrefab, container);
             uiInstance.name = $"UI_{attrDef.id}"; 
 
@@ -96,9 +98,11 @@ public class CharacterStatsPanel : MonoBehaviour
     /// </summary>
     private void OnAttributeValueChanged(FloatChangedPayload payload)
     {
+        Debug.Log("检测到属性更改");
         // 检查是否存在该属性的UI元素
         if (_attributeUIElements.ContainsKey(payload.key))
         {
+            Debug.Log($"属性 '{payload.key}' 的值从 {payload.before} 更新为 {payload.after}");
             // 从缓存中获取显示名称，并用 payload 中的新值更新文本
             string displayName = _attributeDefinitions[payload.key].displayName;
             _attributeUIElements[payload.key].text = $"{displayName}: {payload.after}";
