@@ -362,104 +362,6 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 12
-    fields:
-    - title: Name
-      value: IsSudanOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 13
-    fields:
-    - title: Name
-      value: IsPlayerOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 14
-    fields:
-    - title: Name
-      value: IsZhunaOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 15
-    fields:
-    - title: Name
-      value: IsXiamaOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 16
-    fields:
-    - title: Name
-      value: IsJialilaOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 17
-    fields:
-    - title: Name
-      value: IsRoutizhanlanOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 18
-    fields:
-    - title: Name
-      value: IsWoburutamaOpen
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -907,7 +809,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u8089\u4F53\u5C55\u89C8"
+        value: "\u5F00\u542F\uFF1A\u8089\u4F53\u5C55\u89C8"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -3313,7 +3215,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1282.4308, y: 0}
+    canvasScrollPosition: {x: 2491.8435, y: 0}
     canvasZoom: 0.8499997
   - id: 2
     fields:
@@ -13197,8 +13099,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2595.7737, y: 345.15982}
-    canvasZoom: 0.79000044
+    canvasScrollPosition: {x: 1353.9205, y: 1217.6962}
+    canvasZoom: 0.7300005
   - id: 7
     fields:
     - title: Title
@@ -14760,7 +14662,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: DeactivateObject("NPC1")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15004,7 +14906,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5C5E\u6027\u503C-1"
+        value: "\u5C5E\u6027\u503C\u51CF\u5C11"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15032,13 +14934,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: AddAttribute("Charm", -10)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2368
+        x: 2368.8474
         y: 302
         width: 160
         height: 30
@@ -15901,8 +15803,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 173.85208, y: 118.065094}
-    canvasZoom: 0.47000018
+    canvasScrollPosition: {x: 0, y: 114.61612}
+    canvasZoom: 0.6799998
   - id: 8
     fields:
     - title: Title
@@ -16732,14 +16634,14 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsSuolaweierAlive"] = true
+      conditionsString: Variable["IsSuolaweierAlive"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 184
+        x: 183.21875
         y: 554
         width: 160
         height: 30
@@ -16803,7 +16705,7 @@ MonoBehaviour:
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsSuolaweierAlive"] = false
+      conditionsString: Variable["IsSuolaweierAlive"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -17300,8 +17202,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 249.73212, y: 0}
-    canvasZoom: 0.94
+    canvasScrollPosition: {x: 0, y: 238.28113}
+    canvasZoom: 0.6400003
   syncInfo:
     syncActors: 0
     syncItems: 0
