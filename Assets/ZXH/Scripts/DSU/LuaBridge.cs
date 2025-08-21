@@ -82,6 +82,7 @@ public class LuaBridge : MonoBehaviour
     {
         var stats = GetPlayerStats();
         if (stats == null) return;
+        Debug.Log($"LuaBridge: 通过 Lua 修改属性 '{attributeID}'，改变量为 {delta}");
         stats.AddAttributeByID(attributeID, (float)delta);
     }
 

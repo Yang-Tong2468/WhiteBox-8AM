@@ -23,10 +23,20 @@ public class CharacterStats : MonoBehaviour
         //初始化
         if (baseAttributeSet != null)
         {
-            foreach (var def in baseAttributeSet.attributes)
+            // 遍历新的 AttributeDefault 列表
+            foreach (var attrDefault in baseAttributeSet.attributes)
             {
-                var start = Mathf.Clamp(def.minValue, def.minValue, def.maxValue);
-                _baseValues[def.id] = start;
+                // 从配对中获取属性定义和初始值
+                var def = attrDefault.Definition;
+                var startValue = attrDefault.Value;
+
+                if (def == null) continue; // 安全检查
+
+                // 使用配置的初始值，并确保它在min/max范围内
+                var clampedStartValue = Mathf.Clamp(startValue, def.minValue, def.maxValue);
+
+                // 使用属性的唯一ID作为键，存入处理后的初始值
+                _baseValues[def.id] = clampedStartValue;
                 _mods[def.id] = new List<StatModifier>();
             }
         }
@@ -46,16 +56,18 @@ public class CharacterStats : MonoBehaviour
     /// <param name="delta">变化的量（正数为增加，负数为减少）</param>
     public void AddAttributeByID(string attributeID, float delta)
     {
+        Debug.Log($"尝试通过ID '{attributeID}' 修改属性，变化量为 {delta}", this);
         AttributeDefinition targetDef = FindAttributeDefinitionByID(attributeID);
         if (targetDef != null)
         {
+            Debug.Log($"找到属性 '{targetDef.displayName}' ({targetDef.id})，准备修改基础值。", this);
             // 调用已有的、基于AttributeDefinition的Add方法
             Add(targetDef, delta, true);
         }
     }
 
     /// <summary>
-    /// 通过属性ID，直接设置属性的基础值。
+    /// 通过属性ID，直接设置属性的基础值
     /// </summary>
     /// <param name="attributeID">属性的唯一字符串ID</param>
     /// <param name="value">要设置的新基础值</param>
@@ -80,7 +92,9 @@ public class CharacterStats : MonoBehaviour
             return null;
         }
 
-        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(def => def.id == attributeID);
+        // 在新的列表中查找，并返回匹配的 Definition
+        // ?. 是空值条件运算符，如果 FirstOrDefault 没找到（返回null），则整个表达式返回null，避免报错
+        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(attr => attr.Definition.id == attributeID)?.Definition;
 
         if (targetDef == null)
         {
@@ -105,7 +119,7 @@ public class CharacterStats : MonoBehaviour
         }
 
         // 使用LINQ在属性列表中查找与ID匹配的AttributeDefinition
-        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(def => def.id == attributeID);
+        AttributeDefinition targetDef = baseAttributeSet.attributes.FirstOrDefault(def => def.Definition.id == attributeID)?.Definition;
 
         if (targetDef == null)
         {
@@ -144,13 +158,16 @@ public class CharacterStats : MonoBehaviour
     public void SetBase(AttributeDefinition def, float value, bool invokeEvent = true)
     {
         if (!HasAttribute(def)) return;
-
+        Debug.Log("包含这个定义");
         var old = GetFinal(def);
         _baseValues[def.id] = Mathf.Clamp(value, def.minValue, def.maxValue);
         var now = GetFinal(def);
-
+        Debug.Log($"{invokeEvent}以及{value},old:{old},now:{now}");
         if (invokeEvent && !Mathf.Approximately(old, now))
+        {
+            Debug.Log($"属性 '{def.displayName}' ({def.id}) 变更: {old} -> {now}", this);
             onAttributeChanged?.Raise(def.id, old, now);
+        }
     }
 
     /// <summary>
@@ -163,7 +180,7 @@ public class CharacterStats : MonoBehaviour
     public void Add(AttributeDefinition def, float delta, bool invokeEvent = true)
     {
         if (!HasAttribute(def)) return;
-
+        Debug.Log($"尝试对属性 '{def.displayName}' ({def.id}) 进行加减操作，变化量为 {delta}", this);
         SetBase(def, _baseValues[def.id] + delta, invokeEvent);
     }
 
@@ -207,8 +224,13 @@ public class CharacterStats : MonoBehaviour
     public void RecalculateAll(bool invokeEvent = true)
     {
         if (baseAttributeSet == null) return;
-        foreach (var def in baseAttributeSet.attributes)
+
+        // 遍历新的 AttributeDefault 列表
+        foreach (var attrDefault in baseAttributeSet.attributes)
         {
+            var def = attrDefault.Definition;
+            if (def == null) continue;
+
             var old = GetFinal(def);
             var now = GetFinal(def); // 读取即应用修正
             if (invokeEvent && !Mathf.Approximately(old, now))
