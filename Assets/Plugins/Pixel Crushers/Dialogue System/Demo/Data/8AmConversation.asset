@@ -264,20 +264,6 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 3
-    fields:
-    - title: Name
-      value: IsPlayerDead
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
   - id: 4
     fields:
     - title: Name
@@ -961,9 +947,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsRoutizhanlanOpen"] = true;
-
-        GameObject.Find("NPC7").SetActive(true)'
+      userScript: SetActive("NPC7", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1598,7 +1582,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u82CF\u4E39\u83B7\u80DC\uFF08\u6839\u636E\u67D0\u5C5E\u6027\u503C\u5224\u65AD\uFF09"
+        value: "\u8BA9\u82CF\u4E39\u83B7\u80DC"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1638,7 +1622,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 80
+        x: 79.09091
         y: 806
         width: 160
         height: 30
@@ -1669,7 +1653,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6211\u83B7\u80DC\uFF08\u6839\u636E\u67D0\u5C5E\u6027\u503C\u5224\u65AD\uFF09"
+        value: "\u8BA9\u81EA\u5DF1\u83B7\u80DC"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1740,7 +1724,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5948\u5E03\u54C8\u5C3C\u83B7\u80DC\uFF08\u6839\u636E\u67D0\u5C5E\u6027\u503C\u5224\u65AD\uFF09"
+        value: "\u8BA9\u5948\u5E03\u54C8\u5C3C\u83B7\u80DC"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1780,8 +1764,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1432
-        y: 806
+        x: 1430.8235
+        y: 808.3529
         width: 160
         height: 30
     - id: 17
@@ -2024,7 +2008,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u82CF\u4E39\u7684\u6E38\u620F"
+        value: "\u5F00\u542F\uFF1A\u82CF\u4E39\u7684\u6E38\u620F"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2052,9 +2036,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsSudanOpen"] = true;
-
-        SetActive("NPC2", true)'
+      userScript: SetActive("NPC2", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2699,9 +2681,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsPlayerOpen"] = true;
-
-        GameObject.Find("NPC3").SetActive(true)'
+      userScript: SetActive("NPC3", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3003,9 +2983,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsZhunaOpen"] = true;
-
-        GameObject.Find("NPC4").SetActive(true)'
+      userScript: SetActive("NPC4", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3070,9 +3048,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsJialilaOpen"] = true;
-
-        GameObject.Find("NPC6").SetActive(true)'
+      userScript: SetActive("NPC6", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3137,9 +3113,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsXiamaOpen"] = true;
-
-        GameObject.Find("NPC5").SetActive(true)'
+      userScript: SetActive("NPC5", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3351,8 +3325,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 595.3356}
-    canvasZoom: 0.54999983
+    canvasScrollPosition: {x: 255.77094, y: 795.29315}
+    canvasZoom: 0.6399999
   - id: 2
     fields:
     - title: Title
@@ -3552,7 +3526,7 @@ MonoBehaviour:
         destinationDialogueID: 10
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsSudanOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3831,9 +3805,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsPlayerDead"] = true;
-
-        GameObject.Find("Player").SetActive(false)'
+      userScript: DeactivateObject("Player")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4479,8 +4451,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 43.140537, y: 0}
-    canvasZoom: 0.76000035
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.70000046
   - id: 3
     fields:
     - title: Title
@@ -4668,7 +4640,7 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsPlayerOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4739,7 +4711,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsSudanHere"] = true
+      conditionsString: Variable["IsSudanHere"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4810,7 +4782,7 @@ MonoBehaviour:
         destinationDialogueID: 25
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsSudanHere"] = false
+      conditionsString: Variable["IsSudanHere"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5101,9 +5073,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsPlayerDead"] = true;
-
-        GameObject.Find("Player").SetActive(false)'
+      userScript: DeactivateObject("Player")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6399,7 +6369,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: GetAttribute("Body") >= 100
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6436,7 +6406,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5C5E\u6027\u503C\u672A\u901A\u8FC7\u68C0\u5B9A\uFF0C\u5931\u8D25"
+        value: "\u4F53\u529B\u503C\u672A\u901A\u8FC7\u68C0\u5B9A\uFF0C\u5931\u8D25"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6470,13 +6440,13 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: GetAttribute("Body") < 100
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1744
+        x: 1745.5625
         y: 554
         width: 160
         height: 30
@@ -6894,8 +6864,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 719.50903, y: 0}
-    canvasZoom: 0.8499996
+    canvasScrollPosition: {x: 0, y: 186.7168}
+    canvasZoom: 0.6399997
   - id: 4
     fields:
     - title: Title
@@ -7089,7 +7059,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsZhunaOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8162,7 +8132,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u6765\u5230\u590F\u739B\u7684\u6E38\u620F\n"
+        value: "\u6765\u5230\u590F\u739B\u7684\u6E38\u620F"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8207,7 +8177,7 @@ MonoBehaviour:
         destinationDialogueID: 17
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsXiamaOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9319,7 +9289,7 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsJialilaOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -13241,7 +13211,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1519.1178, y: 818.74713}
+    canvasScrollPosition: {x: 1583.4031, y: 0}
     canvasZoom: 0.4900007
   - id: 7
     fields:
@@ -13442,7 +13412,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsRoutizhanlanOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -14940,9 +14910,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsWoburutamaOpen"] = true;
-
-        GameObject.Find("NPC8").SetActive(true)'
+      userScript: SetActive("NPC8", true)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -15947,7 +15915,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2.8302002, y: 66.98114}
+    canvasScrollPosition: {x: 0, y: 167.9245}
     canvasZoom: 0.53000015
   - id: 8
     fields:
@@ -16136,7 +16104,7 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsWoburutamaOpen"] = true
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
