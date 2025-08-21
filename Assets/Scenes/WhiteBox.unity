@@ -10456,7 +10456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &347420450
 Rigidbody:
@@ -13153,7 +13153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &443162028
 Rigidbody:
@@ -21796,7 +21796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &742855968
 Rigidbody:
@@ -21925,7 +21925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: NPC1
   conversationTitle: NPC1_Opening
-  interactionRange: 1
+  interactionRange: 2
   isInRange: 0
   interactionPrompt: {fileID: 0}
 --- !u!1 &745566945
@@ -22640,7 +22640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &776799269
 Rigidbody:
@@ -35638,7 +35638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &1204235322
 Rigidbody:
@@ -39865,7 +39865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &1336611233
 Rigidbody:
@@ -42495,7 +42495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &1377785227
 Rigidbody:
@@ -62688,7 +62688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe996f5d140a714b96954a0844ba420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   range: 2
 --- !u!54 &2026003268
 Rigidbody:

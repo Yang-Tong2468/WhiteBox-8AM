@@ -292,20 +292,6 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 6
-    fields:
-    - title: Name
-      value: IsMeimoHere
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
   - id: 7
     fields:
     - title: Name
@@ -734,7 +720,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: AddItem("Big Potion", -1);
+      userScript: 'AddItem("Big Potion", -1);
+
+        AddAttribute("Body", -10)'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2823,7 +2811,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["IsBaiyelingHere"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3325,8 +3313,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 255.77094, y: 795.29315}
-    canvasZoom: 0.6399999
+    canvasScrollPosition: {x: 1282.4308, y: 0}
+    canvasZoom: 0.8499997
   - id: 2
     fields:
     - title: Title
@@ -4264,11 +4252,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 3
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4347,7 +4335,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5F00\u542F\u7FA4\u9F99\u65E0\u9996\uFF0C\u5C5E\u6027\u503C+1"
+        value: "\u5C5E\u6027\u503C\u589E\u52A0"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4382,7 +4370,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 532.2638
-        y: 883.2291
+        y: 884.0912
         width: 160
         height: 30
     - id: 14
@@ -4451,8 +4439,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.70000046
+    canvasScrollPosition: {x: 0, y: 72.49417}
+    canvasZoom: 0.6700005
   - id: 3
     fields:
     - title: Title
@@ -5463,7 +5451,7 @@ MonoBehaviour:
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsBaiyelingHere"] = true
+      conditionsString: Variable["IsBaiyelingHere"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5599,7 +5587,7 @@ MonoBehaviour:
         destinationDialogueID: 34
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsMeimoHere"] = true
+      conditionsString: GetAttribute("Charm") >= GetAttribute("Body")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5670,7 +5658,7 @@ MonoBehaviour:
         destinationDialogueID: 35
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsWifeHere"] = false
+      conditionsString: Variable["IsWifeHere"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5741,7 +5729,7 @@ MonoBehaviour:
         destinationDialogueID: 37
         isConnector: 0
         priority: 2
-      conditionsString: Variable["IsWifeHere"] = true
+      conditionsString: Variable["IsWifeHere"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6368,8 +6356,8 @@ MonoBehaviour:
         destinationDialogueID: 41
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: GetAttribute("Body") >= 100
+      conditionsString: GetAttribute("Body") >= 100
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6439,8 +6427,8 @@ MonoBehaviour:
         destinationDialogueID: 42
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: GetAttribute("Body") < 100
+      conditionsString: GetAttribute("Body") < 100
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6825,7 +6813,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u5F00\u542F\u7FA4\u9F99\u65E0\u9996\uFF0C\u5C5E\u6027\u503C\u589E\u52A0"
+        value: "\u5C5E\u6027\u503C\u589E\u52A0"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6859,13 +6847,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1565.5889
+        x: 1573.7855
         y: 1304.6405
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 186.7168}
-    canvasZoom: 0.6399997
+    canvasScrollPosition: {x: 1034.5332, y: 244.3341}
+    canvasZoom: 0.7599996
   - id: 4
     fields:
     - title: Title
@@ -7982,8 +7970,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 93.965454, y: 0}
-    canvasZoom: 0.5800004
+    canvasScrollPosition: {x: 66.94285, y: 630.56335}
+    canvasZoom: 0.7900002
   - id: 5
     fields:
     - title: Title
@@ -9100,7 +9088,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 81.11214, y: 12.075348}
+    canvasScrollPosition: {x: 41.826492, y: 379.93237}
     canvasZoom: 0.7000003
   - id: 6
     fields:
@@ -10541,7 +10529,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 348.26904
+        x: 349.0887
         y: 949.5382
         width: 160
         height: 30
@@ -10600,9 +10588,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["IsPlayerDead"] = true;
-
-        GameObject.Find("Player").SetActive(false)'
+      userScript: DeactivateObject("Player")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12070,8 +12056,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1744
-        y: 722
+        x: 1743.1378
+        y: 722.86206
         width: 160
         height: 30
     - id: 44
@@ -13211,8 +13197,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1583.4031, y: 0}
-    canvasZoom: 0.4900007
+    canvasScrollPosition: {x: 2595.7737, y: 345.15982}
+    canvasZoom: 0.79000044
   - id: 7
     fields:
     - title: Title
@@ -15915,8 +15901,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 167.9245}
-    canvasZoom: 0.53000015
+    canvasScrollPosition: {x: 173.85208, y: 118.065094}
+    canvasZoom: 0.47000018
   - id: 8
     fields:
     - title: Title
