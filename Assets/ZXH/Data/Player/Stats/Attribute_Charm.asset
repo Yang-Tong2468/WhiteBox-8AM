@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Charm
   displayName: Charm
-  minValue: 10
+  minValue: 0
   maxValue: 100
   isResource: 0
   useInteger: 1
